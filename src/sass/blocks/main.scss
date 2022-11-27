@@ -1,0 +1,47 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+  flex-direction: column;
+
+  &__img-first {
+    animation: rotate 5s linear infinite;
+  }
+
+  &__img-second {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 70px;
+    top: -25px;
+    animation: rotate-reverse 5s linear infinite;
+  }
+
+  &__img-three {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    left: 0;
+    top: -60px;
+    animation: rotate 5s linear infinite;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}

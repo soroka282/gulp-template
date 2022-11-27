@@ -1,0 +1,9 @@
+.footer {
+  background: $bg_page;
+
+  @media (min-width: $width_tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
